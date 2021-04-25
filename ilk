@@ -1,0 +1,15 @@
+int s, adet;
+            double ort, top;
+            top = 0.0; adet = 0;
+            while(true)
+            {
+                adet++;
+                Console.WriteLine("{0}. sayıyı giriniz ", adet);
+                s = Convert.ToInt16(Console.ReadLine());
+                top = top + s;
+                if (adet == 5 ) break;
+            }
+            ort = top / adet ;
+            Console.WriteLine("Girilen sayıların toplamı ={0}",top); 
+            Console.WriteLine("Girilen sayıların ortalaması ={0}",ort);
+            Console.ReadKey();
